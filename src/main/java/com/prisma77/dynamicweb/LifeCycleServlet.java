@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 //Servlet은 요청을 service 해주는 코드
-@WebServlet("/life-CycleServlet")
+@WebServlet(name = "lifeCycleServlet", value = "/life-CycleServlet")
 public class LifeCycleServlet extends HttpServlet {
 
 
