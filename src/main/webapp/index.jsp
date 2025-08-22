@@ -9,6 +9,8 @@
 <br/>
 <a href="hello-servlet">Hello Servlet</a>
 <br>
-<a href="/lifeCycleServlet">Hello JSP</a>
+<a href="life-CycleServlet">Hello JSP</a>
+<br>
+<a href="color-servlet">Hello JSP</a>
 </body>
 </html>
