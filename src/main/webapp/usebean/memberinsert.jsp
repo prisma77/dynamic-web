@@ -12,5 +12,17 @@
 </head>
 <body>
 
+<%
+    request.setCharacterEncoding("UTF-8");
+%>
+
+NAME: <%=request.getParameter("name")%>
+<br>
+EMAIL: <%=request.getParameter("email")%>
+<br>
+PW: <%=request.getParameter("pwd")%>
+<br>
+REM : <%=request.getParameter("remember")%>
+
 </body>
 </html>
