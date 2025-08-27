@@ -39,7 +39,7 @@
     </aside>
 
     <main class="col-md-6">
-      <form action="<%=request.getContextPath()%>/signup" method="post">
+      <form action="signupresult.jsp" method="post">
         <div class="mb-3">
           <label for="username" class="form-label">아이디</label>
           <input type="text" class="form-control" id="username" name="username">

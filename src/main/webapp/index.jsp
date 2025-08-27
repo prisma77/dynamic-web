@@ -27,14 +27,6 @@
 <a href="color-servlet">Hello JSP</a>
 <br>
 
-<%
-  if (session.getAttribute("user") != null) {
-    response.sendRedirect("board/welcome.jsp");
-  } else {
-    response.sendRedirect("board/login.jsp");
-  }
-%>
-
 
 </body>
 </html>
