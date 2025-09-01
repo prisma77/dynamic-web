@@ -26,7 +26,8 @@
 <br>
 <a href="color-servlet">Hello JSP</a>
 <br>
-
+<a href="write.do?cmd=write">write</a>
+<a href="list.do?cmd=list">list</a>
 
 </body>
 </html>
