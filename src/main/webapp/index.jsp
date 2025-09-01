@@ -12,7 +12,7 @@
     }
 
     a:hover {
-      color: #007bff; /* 마우스 호버 시 밝은 파란색 */
+      color: rgba(0, 255, 225, 0.84); /* 마우스 호버 시 밝은 파란색 */
     }
   </style>
 
@@ -28,6 +28,9 @@
 <br>
 <a href="write.do?cmd=write">write</a>
 <a href="list.do?cmd=list">list</a>
+<br>
+<a href="ui.do?cmd=loginui">login</a>
+
 
 </body>
 </html>
