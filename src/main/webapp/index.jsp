@@ -5,14 +5,18 @@
   <title>JSP - Hello World</title>
 
   <style>
+    body {
+      background: #202020;
+    }
     a {
+      color: #46ff87;
       text-decoration: none; /* 밑줄 없애기 (기존 유지) /
       color: inherit;      / 기본 색상 상속 (기존 유지) /
       transition: color 0.3s ease-in-out; / 색상 변화를 부드럽게 만들기 위한 transition 추가 */
     }
 
     a:hover {
-      color: rgba(0, 255, 225, 0.84); /* 마우스 호버 시 밝은 파란색 */
+      color: rgba(255, 0, 115, 0.84); /* 마우스 호버 시 밝은 파란색 */
     }
   </style>
 
@@ -30,7 +34,8 @@
 <a href="list.do?cmd=list">list</a>
 <br>
 <a href="ui.do?cmd=loginui">login</a>
-
+<br>
+<a href="user?action=list" class="btn btn-primary">사용자 목록 보러가기</a>
 
 </body>
 </html>
