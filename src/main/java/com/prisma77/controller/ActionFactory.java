@@ -23,6 +23,8 @@ public class ActionFactory {
         }//mvclogin.jsp를  forward해서 화면을 보여주기
         else if(cmd.equals("loginui")) {
             action=new UiAction("view/mvclogin.jsp",false);
+        }else if(cmd.equals("loginprocess")) {
+            action= new LoginProcessAction("list.do?cmd=list",true);
         }
         return action;
     }

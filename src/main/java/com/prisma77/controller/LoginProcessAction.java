@@ -16,7 +16,7 @@ public class LoginProcessAction implements Action{
     @Override
     public ActionForWard execute(HttpServletRequest request, HttpServletResponse response) {
         String id = request.getParameter("id");
-        String passwd = request.getParameter("passwd");
+        String passwd = request.getParameter("password");
 
         if(id.equals("admin") && passwd.equals("1234")){
             request.getSession().setAttribute("admin",id);
