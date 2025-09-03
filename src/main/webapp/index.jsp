@@ -8,7 +8,7 @@
     body {
       background: #202020;
     }
-    a {
+    a, h1 {
       color: #46ff87;
       text-decoration: none; /* 밑줄 없애기 (기존 유지) /
       color: inherit;      / 기본 색상 상속 (기존 유지) /
@@ -36,6 +36,8 @@
 <a href="ui.do?cmd=loginui">login</a>
 <br>
 <a href="user?action=list" class="btn btn-primary">사용자 목록 보러가기</a>
+<br>
+<a href="/board?action=list" class="btn btn-primary">게시판 목록 보러가기</a>
 
 </body>
 </html>

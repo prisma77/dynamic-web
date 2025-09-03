@@ -4,7 +4,8 @@ plugins {
 }
 
 group 'com.prisma77'
-version '1.0-SNAPSHOT'
+version '1.0.SNAPSHOT'
+sourceCompatibility = '11'
 
 repositories {
   mavenCentral()
@@ -27,17 +28,25 @@ tasks.withType(Javadoc).configureEach {
 
 
 dependencies {
-  compileOnly('javax.servlet:javax.servlet-api:4.0.1')
-  testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
-  testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+// 톰캣이 제공하므로 패키징하지 않도록 compileOnly
+  compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
+  compileOnly 'javax.servlet.jsp:javax.servlet.jsp-api:2.3.3' // 👈 이 줄을 추가하세요!
+
+  // JSTL 라이브러리
   implementation 'javax.servlet:jstl:1.2'
-  implementation 'javax.servlet:javax.servlet-api:4.0.1' // 서블릿 필수
   implementation 'javax.el:javax.el-api:3.0.0' // Expression Language
   implementation 'org.glassfish:javax.el:3.0.0' // EL 구현체
-  implementation 'mysql:mysql-connector-java:8.0.33'
+
+  // 나머지 라이브러리들
+  testImplementation 'junit:junit:4.13.2'
+  implementation 'mysql:mysql-connector-java:8.0.31'
   compileOnly 'org.projectlombok:lombok:1.18.26'
   annotationProcessor 'org.projectlombok:lombok:1.18.26'
+  implementation 'org.mybatis:mybatis:3.5.15'
+  implementation 'org.slf4j:slf4j-simple:2.0.13'
 }
+
+war { archiveFileName = 'jsp-mybatis-crud.war' }
 
 test {
   useJUnitPlatform()
