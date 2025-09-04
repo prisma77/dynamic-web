@@ -38,6 +38,9 @@
 <a href="user?action=list" class="btn btn-primary">사용자 목록 보러가기</a>
 <br>
 <a href="/board?action=list" class="btn btn-primary">게시판 목록 보러가기</a>
-
+<br>
+<a href="${pageContext.request.contextPath}/jstlLesson?action=redirect">direct 방식으로 호출하기</a>
+<br>
+<a href="${pageContext.request.contextPath}/jstlLesson?action=forward">forward 방식으로 호출하기</a>
 </body>
 </html>
