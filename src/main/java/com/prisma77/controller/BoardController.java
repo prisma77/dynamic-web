@@ -9,7 +9,7 @@ import javax.servlet.http.*;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name="boardController", urlPatterns={"/board"})
+@WebServlet(name="boardController", urlPatterns={"/board", "/board/*"})
 public class BoardController extends HttpServlet {
     private final BoardDAO boardDAO = new BoardDAO();
 

@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="pageTitle" value="글쓰기"/>
-<jsp:include page="/WEB-INF/jspf/header.jspf"/>
+<jsp:include page="/WEB-INF/jspf/header.jsp"/>
 
 <a href="<c:url value='/board'><c:param name='action' value='list'/></c:url>" class="btn btn-link p-0 mb-3">&larr; 목록</a>
 
@@ -23,5 +23,5 @@
 
 
 
-<jsp:include page="/WEB-INF/jspf/footer.jspf"/>
+<jsp:include page="/WEB-INF/jspf/footer.jsp"/>
 

@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <c:set var="pageTitle" value="게시판 목록"/>
-<jsp:include page="/WEB-INF/jspf/header.jspf"/>
+<jsp:include page="/WEB-INF/jspf/header.jsp"/>
 
 <h3 class="mb-3">게시판 목록</h3>
 
@@ -34,4 +34,4 @@
     </tbody>
 </table>
 
-<jsp:include page="/WEB-INF/jspf/footer.jspf"/>
+<jsp:include page="/WEB-INF/jspf/footer.jsp"/>
