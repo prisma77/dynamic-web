@@ -42,5 +42,9 @@
 <a href="${pageContext.request.contextPath}/jstlLesson?action=redirect">direct 방식으로 호출하기</a>
 <br>
 <a href="${pageContext.request.contextPath}/jstlLesson?action=forward">forward 방식으로 호출하기</a>
+<br>
+<a href="${pageContext.request.contextPath}/jstlLesson?action=info">info 방식으로 호출하기</a>
+<br>
+<a href="${pageContext.request.contextPath}/jstlLesson?action=calc">calc 방식으로 호출하기</a>
 </body>
 </html>
