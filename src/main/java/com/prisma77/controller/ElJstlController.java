@@ -30,8 +30,12 @@ public class ElJstlController extends HttpServlet {
             req.getRequestDispatcher("eljstl/infoJstl.jsp").forward(req, resp);
 
         }else if(action!=null&& action.equals("calc")) {
-            req.setAttribute("calc", new BoardDTO(1,"no","hi",null, null));
+            req.setAttribute("calc", new BoardDTO(1, "no", "hi", null, null));
             req.getRequestDispatcher("eljstl/elJstl3.jsp").forward(req, resp);
+
+        }else if(action!=null && action.equals("function")){
+            req.getRequestDispatcher("eljstl/eljstl4.jsp").forward(req, resp);
+
         }
 
 
